@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="1.4.7">
+ <file name="/var/lib/jenkins/jobs/lafourchette-core-master-nightly/workspace/src/LaFourchette/AffiliateBundle/API/DataBuilder/AbstractStreamApiDataBuilder.php">
+  <error line="38" column="16" severity="error" message="Line indented incorrectly; expected at least 16 spaces, found 15" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+  <error line="44" column="150" severity="warning" message="Line exceeds 120 characters; contains 149 characters" source="Generic.Files.LineLength.TooLong"/>
+ </file>
+ <file name="/var/lib/jenkins/jobs/lafourchette-core-master-nightly/workspace/src/LaFourchette/CoreBundle/API/LocalesGetHostMethod.php">
+  <error line="40" column="14" severity="error" message="Line indented incorrectly; expected 16 spaces, found 13" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ </file>
+</checkstyle>
