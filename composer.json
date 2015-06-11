@@ -1,0 +1,20 @@
+{
+    "name": "jshedde/jenkins-metrics",
+    "authors": [
+        {
+            "name": "Jean-Sébastien Hedde",
+            "email": "jshedde@lafourchette.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
