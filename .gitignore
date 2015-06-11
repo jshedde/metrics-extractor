@@ -1,3 +1,5 @@
 /vendor/
 .*.swp
 composer.phar
+bin
+composer.lock
