@@ -1,22 +1,10 @@
 <?php
 
-class CloverXmlMetricCollector implements MetricCollectorInterface
+class CloverXmlMetricCollector extends AbstractXmlMetricCollector implements MetricCollectorInterface
 {
-    protected $file;
-    protected $prefix;
-
-    public function __construct($file, $prefix = '')
-    {
-        $this->file = $file;
-        $this->prefix = $prefix;
-    }
-
     public function collect()
     {
-        $document = new DOMDocument();
-        $document->load($this->file);
-        $xpath = new DOMXpath($document);
-        $nodes = $xpath->query('/coverage/project/metrics');
+        $nodes = $this->getNodes('/coverage/project/metrics');
         $attributes = $nodes->item(0)->attributes;
         $metrics = array();
 

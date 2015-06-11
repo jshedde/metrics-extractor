@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="src" tests="905" assertions="4804" failures="0" errors="0" time="1291.875759">
+  </testsuite>
+</testsuites>
