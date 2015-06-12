@@ -36,6 +36,7 @@ $metrics = array_merge($metrics, $collector->collect());
 
 //var_dump($metrics);
 foreach ($metrics as $metric => $value) {
+    echo $metric . '|' . $value . PHP_EOL;
     $service->gauge($metric, $value);
 }
 
