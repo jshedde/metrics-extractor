@@ -10,7 +10,7 @@ use Liuggio\StatsdClient\StatsdClient,
     Liuggio\StatsdClient\Service\StatsdService;
             // use Liuggio\StatsdClient\Sender\SysLogSender;
 
-$sender = new SocketSender('localhost', 8125, 'udp');
+$sender = new SocketSender('delta1.lafourchette.lan', 8125, 'udp');
             // $sender = new SysLogSender(); // enabling this, the packet will not send over the socket
 
 $client  = new StatsdClient($sender);
