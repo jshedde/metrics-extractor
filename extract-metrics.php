@@ -20,7 +20,7 @@ $options = getopt(null, $longopts);
 
 foreach ($longopts as $opt) {
     $opt = substr($opt, 0, -1);
-    if (false === array_key_exists($opt, $options)) {
+    if (false === array_key_exists($opt, $options) || null === $options[$opt]  || false === $options[$opt]  || 0 === strlen(trim($options[$opt]))) {
         throw new \RuntimeException(sprintf('"%s" is required.', $opt));
     }
 }
